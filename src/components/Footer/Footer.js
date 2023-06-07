@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer>
-            <div class="footer-img">
+            <div className="footer-img">
                 <img src="" alt="Litte Lemon pic of a group of people smiling around a table" />
             </div>
             <ul>

@@ -1,0 +1,182 @@
+.hide {
+    display: none;
+}
+
+.hero {
+    display: flex;
+    background-color: #495E57;
+}
+
+.hero .brand h1 {
+    color: rgba(244, 206, 20, 0.9);
+    white-space: nowrap;
+    overflow: visible;
+    margin-top: 30px;
+}
+
+.hero .brand h2 {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: -42px;
+}
+.hero .info {
+    padding-bottom: 50px;
+}
+.hero .info p {
+    max-width: 25ch;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+}
+
+.reserve {
+    width: 200px;
+    height: 40px;
+    left: 303px;
+    top: 441px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 24px;
+    background-color: #F4CE14;
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+}
+
+@media (max-width:344px) {
+    .hero .brand h1 {
+        font-size: 32px;
+    }
+
+    .hero .brand h2 {
+        color: rgba(255, 255, 255, 0.8);
+        margin-top: -32px;
+    }
+
+    .right {
+        position: relative;
+        width: 128px;
+    }
+
+    .left {
+        position: relative;
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .left .info {
+        display: block;
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heroimg {
+        position: absolute;
+        width: 108px;
+        height: 104px;
+        background: url(/public/assets/images/restauranfood.jpg);
+        background-size: cover;
+        border-radius: 32px;
+        margin-left: 25px;
+        margin-right: auto;
+        transform: translateY(75%);
+
+    }
+}
+
+@media (max-width:600px) and (min-width: 344px) {
+    .hero .brand h1 {
+        font-size: 42px;
+    }
+
+    .right {
+        position: relative;
+        width: 168px;
+    }
+
+    .left {
+        position: relative;
+        width: 50%;
+    }
+
+    .left .info {
+        display: block;
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heroimg {
+        position: absolute;
+        margin-left: 0;
+        transform: translate(50%, 80%);
+        width: 128px;
+        height: 120px;
+        background: url(/public/assets/images/restauranfood.jpg);
+        background-size: cover;
+        border-radius: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:601px) and (max-width:900px) {
+    .right {
+        width: 400px;
+    }
+    .left{
+        margin-left: 50px;
+    }
+
+    .heroimg {
+        position: relative;
+        margin-top: 43px;
+        transform: translate(10%, 10%);
+        width: 80%;
+        height: 60%;
+        background: url(/public/assets/images/restauranfood.jpg);
+        border-radius: 32px;
+        background-size: cover;
+
+    }
+}
+
+@media((min-width:900px)){
+    .right {
+        width: 400px;
+    }
+    .left{
+        margin-left: 80px;
+    }
+
+    .heroimg {
+        position: relative;
+        margin-top: 43px;
+        transform: translate(26%, 16%);
+        width: 326px;
+        height: 300px;
+        background: url(/public/assets/images/restauranfood.jpg);
+        border-radius: 32px;
+        background-size: cover;
+
+    }
+}
+
+@media (min-width:1080px) {
+    .right {
+        width: 400px;
+    }
+    .left{
+        margin-left: 80px;
+    }
+
+    .heroimg {
+        position: relative;
+        margin-top: 43px;
+        transform: translate(80%, 16%);
+        width: 346px;
+        height: 320px;
+        background: url(/public/assets/images/restauranfood.jpg);
+        border-radius: 32px;
+        background-size: cover;
+
+    }
+}

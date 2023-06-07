@@ -1,7 +1,7 @@
 export default function Navbar(){
     return(
         <nav>
-    <div class="logo">
+    <div className="logo">
         <img src="logo" alt="Little Lemon Logo"/>
     </div>
   <ul>
