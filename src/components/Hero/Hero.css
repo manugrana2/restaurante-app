@@ -161,6 +161,10 @@
 }
 
 @media (min-width:1080px) {
+    .hero .brand h2 {
+        color: rgba(255, 255, 255, 0.8);
+        margin-top: -62px;
+    }
     .right {
         width: 400px;
     }
