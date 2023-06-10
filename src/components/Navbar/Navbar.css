@@ -1,0 +1,110 @@
+.main{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.main ul li{
+    margin-left: 1em;
+}
+.main ul li a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width:768px) {
+    .main .logo{
+        position: relative;
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .menu {
+        float: left;
+        margin-top: 6px;
+    }
+    .cart {
+        float: right;
+    }
+    .cart img{
+        width:40px;
+        cursor: pointer;
+    }
+    .hamburger {
+        display: inline-block;
+        cursor: pointer;
+      }
+      .line {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #000;
+        margin-bottom: 5px;
+        transition: transform 0.3s ease;
+      }
+      #hamburger-checkbox {
+        display: none;
+      }
+      /* Rotate and animate the lines when the hamburger menu is checked */
+      #hamburger-checkbox:checked ~ .hamburger .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+      }
+      #hamburger-checkbox:checked ~ .hamburger .line:nth-child(2) {
+        opacity: 0;
+      }
+      #hamburger-checkbox:checked ~ .hamburger .line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+      }
+    .main{
+        position: relative;
+    }
+    .main .logo .logoimg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:180px;
+    }
+    .main ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        list-style-type: none;
+        width: 100%;
+        display: none;
+    }
+    .main li{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        list-style-type: none;
+        width: 100%;
+    }
+    .main ul li{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:768px) {
+    .menu {
+        display: none;
+    }
+    .cart {
+        display: none;
+    }
+    .main{
+        display: flex;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .main ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        list-style-type: none;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 10px;
+        margin-inline-end: 10px;
+        padding-inline-start: 40px;
+        width: 100%;
+    }
+}
+
