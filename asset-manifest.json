@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/restaurante-app/static/css/main.cc1f291a.css",
+    "main.js": "/restaurante-app/static/js/main.5a6387be.js",
+    "static/js/787.66057562.chunk.js": "/restaurante-app/static/js/787.66057562.chunk.js",
+    "static/media/restauranfood.jpg": "/restaurante-app/static/media/restauranfood.3616a725cad359ca9a10.jpg",
+    "index.html": "/restaurante-app/index.html",
+    "main.cc1f291a.css.map": "/restaurante-app/static/css/main.cc1f291a.css.map",
+    "main.5a6387be.js.map": "/restaurante-app/static/js/main.5a6387be.js.map",
+    "787.66057562.chunk.js.map": "/restaurante-app/static/js/787.66057562.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc1f291a.css",
+    "static/js/main.5a6387be.js"
+  ]
+}
