@@ -40,12 +40,19 @@
 
     .categories .category:hover {
         background-color: #ced9d4;
+        color: #495E57;
 
     }
 
     .categories input {
         display: none;
     }
+    .categories input:checked + label {
+        background-color: #495E57;
+        color: #EDEFEE;
+    }
+
+
 
     .category-selected {
         min-width: max-content;

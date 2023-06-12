@@ -1,0 +1,19 @@
+.testimonial{
+    width: 180px;
+    background-color: #EDEFEE;
+    padding: 0px 20px;
+    border: 1px  #bdbdbd solid;
+}
+.testimonial .user-photo{
+    float: left;
+    width: 80px;
+    border-radius: 48px;
+}
+
+.testimonial .user-name{
+    transform: translateX(10px);
+}
+.testimonial .review{
+    transform: translateX(10px);
+    color: #495E57;
+}
