@@ -8,6 +8,7 @@ import {
 import Bookings from "./Pages/Bookings/Bookings";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import BookingConfirmation from "./Pages/Bookings/Confirmation/BookingConfirmation";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
     path: "/bookings",
     element: <Bookings/>,
   },
+  {
+    path: "/bookings/confirmation",
+    element: <BookingConfirmation/>
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(

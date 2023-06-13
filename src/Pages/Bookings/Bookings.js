@@ -2,20 +2,25 @@ import Specials from "../../components/Specials/Specials";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import "./Bookings.css"
 import React from "react";
-import BookingForm from "./Form/BookingForm";
+import BookingForm from "./BookingForm/BookingForm";
 import { useReducer } from "react";
+import { fetchAPI, submitAPI } from "../../fakeApi";
+const today = new Date();
+export const initializeTimes = (() => fetchAPI(today))();
 
-const initializeTimes = (() => ["16:00","17:00", "18:00", "19:00", "20:00", "21:00", "22:00"])();
-
-function updateTimes(state, action) {
+export function updateTimes(state, action) {
     switch (action.type) {
         case "updateDate":
-            console.log("Time updated");
-            return [...initializeTimes, "23:00"];
+            let date = new Date(action.date)
+            return fetchAPI(date);
         default:
             return initializeTimes;
 
     }
+
+}
+export function submitForm(data) {
+    return (submitAPI(data))
 
 }
 export default function Bookings() {
@@ -26,7 +31,7 @@ export default function Bookings() {
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes)
     return (
         <main>
-            <BookingForm avialability={availableTimes} dispatch={dispatch} />
+            <BookingForm avialability={availableTimes} dispatch={dispatch} post={submitForm}/>
             <Specials />
             <Testimonials />
         </main>

@@ -1,0 +1,73 @@
+.booking-confirmation-container {
+    min-height: 70vh;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://th.bing.com/th/id/OIG.8ZcVLW9Ma.ZVYJ29fp6N?pid=ImgGn);
+}
+.booking-confirmation-container::after {
+    content: "Your table has been successfully reserved. We look forward to serving you.";
+    position: absolute;
+    font-family: Markazi-Text;
+    color: #F4CE14;
+    font-size: 32px;
+    margin-left: 90px;
+    margin-right: 90px;
+    transform: translateY(45%);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+@media (min-width:769px){
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0px 0 0 2%;
+        gap: 20px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: 'Arial', sans-serif;
+    }
+
+    .booking-confirmation-container {
+        min-height: 70vh;
+        background-size: cover;
+        background-image: url(https://th.bing.com/th/id/OIG.8ZcVLW9Ma.ZVYJ29fp6N?pid=ImgGn);
+        background-position: center;
+    }
+    .booking-confirmation-container::after {
+        content: "Your table has been successfully reserved. We look forward to serving you.";
+        position: absolute;
+        font-family: Markazi-Text;
+        color: #F4CE14;
+        font-size: 64px;
+        margin-left: 80px;
+        margin-right: 80px;
+        transform: translateY(10%);
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        border-top-left-radius: 8px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+@media (min-width:827px){
+    .booking-confirmation-container::after {
+        margin-left: 90px;
+        margin-right: 90px;
+        transform: translateY(10%);
+    }
+}
+@media (min-width:982px) {
+
+    .booking-confirmation-container::after {
+        margin-left: 90px;
+        margin-right: 90px;
+        transform: translateY(10%);
+    }
+
+
+}

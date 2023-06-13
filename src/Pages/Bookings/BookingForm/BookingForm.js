@@ -1,10 +1,18 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import "./BookingForm.css"
-export default function BookingForm({avialability, dispatch}) {
+export default function BookingForm({avialability, dispatch, post}) {
     const [booking, Setbooking] = useState({ date: "", time: "", guests: "", occasion: "" });
+    const navigate = useNavigate();
 
     const pushBooking = (e) => {
         e.preventDefault();
+        let booked = post(booking)
+        if(booked){
+            console.log("Info submitted");
+            navigate("./confirmation")
+        }
     };
     const handleChange = (e) => {
         Setbooking(prevState => ({
