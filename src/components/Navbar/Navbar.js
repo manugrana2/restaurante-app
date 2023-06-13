@@ -50,9 +50,9 @@ export default function Navbar() {
             <span className="line"></span>
           </label>
         </div>
-        <a href="/" className="logoimg"><img  src="/assets/images/Logo.svg" alt="Little Lemon Logo" /></a>
+        <a href="/" className="logoimg"><img  src={process.env.PUBLIC_URL+"/assets/images/Logo.svg"} alt="Little Lemon Logo" /></a>
         <div className="cart">
-          <img src="/assets/images/Basket.svg" alt="Basket or cart icon" />
+          <img src={process.env.PUBLIC_URL+"/assets/images/Basket.svg"} alt="Basket or cart icon" />
         </div>
       </div>
       <ul className="menulinks">
@@ -63,6 +63,9 @@ export default function Navbar() {
         <li><a href="/#">Order Online</a></li>
         <li><a href="/#">Login</a></li>
       </ul>
+      <div className="cart-desktop">
+          <img src={process.env.PUBLIC_URL+"/assets/images/Basket.svg"} alt="Basket or cart icon" />
+        </div>
     </nav>
   )
 }

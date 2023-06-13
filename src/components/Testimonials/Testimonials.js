@@ -5,19 +5,19 @@ export default function Testimonials() {
         {
             rating: 5,
             name: 'John Doe',
-            photo: 'none',
+            photo: 'https://th.bing.com/th/id/OIG.OD0HVSS9ibgo.wzgf5XT?pid=ImgGn',
             review: 'The Little Lemon is an exceptional family-owned restaurant in Chicago. Their Mediterranean cuisine is authentic, and their unique modern twist on traditional recipes is something to relish. The cozy ambiance and exceptional service make it a must-visit!'
         },
         {
             rating: 4.5,
             name: 'Jane Smith',
-            photo: 'none',
+            photo: 'https://th.bing.com/th/id/OIG.XWpd8BNLkB5Hljash4aj?pid=ImgGn',
             review: 'This hidden gem in Chicago offers the best Mediterranean dining experience. The Little Lemon takes traditional recipes to another level with their modern interpretation. The food is fresh, flavorful, and perfectly balanced. A remarkable dining experience!'
         },
         {
             rating: 5,
             name: 'Richard Roe',
-            photo: 'none',
+            photo: 'https://th.bing.com/th/id/OIG.Tj4AEQ.xFpW8Ml6uLq1X?pid=ImgGn',
             review: 'The Little Lemon offers an incredible blend of traditional and modern Mediterranean cuisine. As a family-owned establishment in Chicago, they offer an inviting atmosphere that compliments their delicious dishes. An exceptional place to savor Mediterranean flavors!'
         }
     ];

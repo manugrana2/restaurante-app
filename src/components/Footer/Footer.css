@@ -1,0 +1,27 @@
+.footer-container{
+    background-color: #59615e;
+
+}
+.footer{
+    display: flex;
+    max-width: max-content;
+    margin: 0 auto;
+}
+.footer-img img{
+    max-width: 30vw;
+    margin: 0 auto;
+    max-height: 220px;
+    margin-top: 37px;
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer ul li{
+    margin-bottom: 10px;
+}
+.footer ul h4{
+   color: #FBDABB;
+}
+.footer ul li a{
+    color: #333333;
+}

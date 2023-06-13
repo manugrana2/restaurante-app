@@ -9,7 +9,6 @@ export default function Categories({ list }) {
                         <React.Fragment key={index}>
                             <input type="checkbox" id={"cat-"+index}/>
                             <label id={"cat-" + index+"-label"} htmlFor={"cat-"+index} className="category" key={index}>{item}</label>
-
                         </React.Fragment>
                     )
                 })}

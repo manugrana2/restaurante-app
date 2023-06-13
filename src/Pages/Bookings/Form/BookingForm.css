@@ -1,0 +1,107 @@
+.booking-form-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    background-size: contain;
+    background-image: url(https://th.bing.com/th/id/OIG.8ZcVLW9Ma.ZVYJ29fp6N?pid=ImgGn);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+    gap: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+form input[type="date"],
+form select,
+form input[type="number"] {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+form input[type="date"]::placeholder,
+form input[type="number"]::placeholder {
+    color: #495057;
+}
+
+form input[type="submit"] {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #F4CE14;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #495E57;
+}
+
+span .error {
+    color: red;
+}
+@media (min-width:769px){
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0px 0 0 2%;
+        gap: 20px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: 'Arial', sans-serif;
+    }
+
+    .booking-form-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-size: cover;
+        background-image: url(https://th.bing.com/th/id/OIG.8ZcVLW9Ma.ZVYJ29fp6N?pid=ImgGn);
+        background-position: center;
+    }
+    .booking-form-container::after {
+        content: "Book a table at Little Lemon, Chicago.";
+        position: absolute;
+        font-family: Markazi-Text;
+        color: #F4CE14;
+        font-size: 64px;
+        margin-left: 390px;
+        margin-right: 8px;
+        transform: translateY(-370px);
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        border-top-left-radius: 8px;
+
+    }
+}
+@media (min-width:827px){
+    .booking-form-container::after {
+        transform: translateY(-342px);
+    }
+}
+@media (min-width:982px) {
+
+    .booking-form-container::after {
+        transform: translateY(-300px);
+    }
+
+
+}

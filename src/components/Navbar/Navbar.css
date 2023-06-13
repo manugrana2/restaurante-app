@@ -9,6 +9,9 @@
     text-decoration: none;
     color: black;
 }
+.cart-desktop{
+    display: none;
+}
 @media (max-width:768px) {
     .main .logo{
         position: relative;
@@ -86,8 +89,17 @@
     .menu {
         display: none;
     }
-    .cart {
+    .cart{
         display: none;
+    }
+    .cart-desktop{
+        display: block;
+        align-self: flex-end;
+        margin-left: 20px;
+    }
+    .cart-desktop img{
+        width:40px;
+        cursor: pointer;
     }
     .main{
         display: flex;

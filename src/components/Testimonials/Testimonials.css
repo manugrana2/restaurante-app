@@ -1,25 +1,49 @@
 @media (max-width:768px) {
+    .testimonials-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 40px 4% 0px 4%;
+
+    }
+
+    .testimonials .testimonial {
+        margin-top: 20px;
+        width: 92%;
+    }
+    .testimonials .title {
+        margin: auto;
+        padding-top: 40px;
+        width: max-content;
+        margin-bottom: -20px;
+    }
 }
+
 @media (min-width:769px) {
-    .testimonials{
+    .testimonials {
         background-color: #D9D9D9;
         margin-top: 8%;
         padding-bottom: 70px;
     }
-    .testimonials .title{
+
+    .testimonials .title {
         margin: auto;
         padding-top: 70px;
         padding-bottom: 70px;
         width: max-content;
     }
-    .testimonials .testimonial{
+
+    .testimonials .testimonial {
         margin-top: 20px;
     }
-    .container{
+
+    .container {
         width: 80%;
         margin: auto;
     }
-    .testimonials-list{
+
+    .testimonials-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
