@@ -5,7 +5,7 @@
 <br>
 <br>
 2. Navigate to the app folder<br>
-```git clone restaurante-app```<br>
+```cd restaurante-app```<br>
 <br>
 3. Install the dependencies<br>
 ```npm install```
