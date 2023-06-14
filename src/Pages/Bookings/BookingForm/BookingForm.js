@@ -88,6 +88,7 @@ export default function BookingForm({ avialability, dispatch, post }) {
                     id="res-date"
                     onChange={handleChange}
                     onBlur={()=>{settouchedInput({...touchedInput, date:true})}}
+                    aria-invalid={!validinput.date && touchedInput.date? "true":""}
                 />
                 {!validinput.date && touchedInput.date ? <span className="error">Write or select a valid date</span>:""}
 
@@ -96,6 +97,7 @@ export default function BookingForm({ avialability, dispatch, post }) {
                     value={booking.time}
                     id="res-time"
                     onChange={handleChange}
+                    aria-invalid={!validinput.time ? "true":""}
                 >
                     {avialability.map((value, index) => <option value={value} key={index}>{value}</option>)}
                 </select>
@@ -111,6 +113,7 @@ export default function BookingForm({ avialability, dispatch, post }) {
                     id="guests"
                     onChange={handleChange}
                     onBlur={()=>{settouchedInput({...touchedInput, guests:true})}}
+                    aria-invalid={!validinput.guests && touchedInput.date? "true":""}
                 />
                 {!validinput.guests && touchedInput.guests?<span className="error">Number of guests should be between 1-10</span>:""}
                 <label htmlFor="occasion">Occasion</label>
@@ -119,6 +122,7 @@ export default function BookingForm({ avialability, dispatch, post }) {
                     value={booking.occasion}
                     id="occasion"
                     onChange={handleChange}
+                    aria-invalid={!validinput.date ? "true":""}
                 >
                     <option value={1}>Birthday</option>
                     <option value={2}>Anniversary</option>
