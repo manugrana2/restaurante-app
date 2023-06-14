@@ -78,8 +78,40 @@
 
     }
 }
+@media (max-width:442px){
+    .hero .brand h1 {
+        font-size: 38px;
+    }
 
-@media (max-width:600px) and (min-width: 344px) {
+    .right {
+        position: relative;
+        width: 168px;
+    }
+
+    .left {
+        position: relative;
+        width: 50%;
+    }
+
+    .left .info {
+        display: block;
+        width: 180px;
+    }
+
+    .heroimg {
+        position: absolute;
+        margin-left: 0;
+        transform: translate(10%, 80%);
+        width: 128px;
+        height: 120px;
+        background: url(/public/assets/images/restauranfood.jpg);
+        background-size: cover;
+        border-radius: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width:600px) and (min-width: 443px) {
     .hero .brand h1 {
         font-size: 42px;
     }
