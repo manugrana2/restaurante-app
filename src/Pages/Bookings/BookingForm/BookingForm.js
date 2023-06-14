@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "./BookingForm.css"
 import { useEffect } from "react";
 export default function BookingForm({ avialability, dispatch, post }) {
@@ -8,7 +7,6 @@ export default function BookingForm({ avialability, dispatch, post }) {
     const [currentDate, setCurrentDate] = useState({ year: 2023, month: 0o6, day: 13 });
     const [validForm, setValidForm] = useState(false);
     const[touchedInput, settouchedInput] = useState({date: false, time: false, guests: false, occasion: false})
-    const navigate = useNavigate();
     // Get the current year from a server :)
     useEffect(() => {
         fetch("http://api.geonames.org/timezoneJSON?formatted=true&lat=47.01&lng=10.2&username=demo&style=full")
@@ -65,7 +63,7 @@ export default function BookingForm({ avialability, dispatch, post }) {
         settouchedInput({date: true, time: true, guests: true, occasion: true})
         let booked = post(booking)
         if (booked && validForm) {
-            navigate("./confirmation")
+            window.location.href = "/bookings/confirmation"
         }
     };
     const handleChange = (e) => {
@@ -79,7 +77,7 @@ export default function BookingForm({ avialability, dispatch, post }) {
     }
     return (
         <div className="booking-form-container">
-            <form onSubmit={pushBooking} >
+            <form onSubmit={pushBooking} role="form">
                 <label htmlFor="res-date">Choose date</label>
                 <input
                     value={booking.date}
