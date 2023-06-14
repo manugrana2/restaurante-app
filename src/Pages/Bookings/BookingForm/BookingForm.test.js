@@ -24,7 +24,8 @@ test('BookingForm allows the user to book successfully', async () => {
     fireEvent.change(screen.getByRole('combobox', { name: /Occasion/ }), {
         target: { value: '2' },
     });
-    fireEvent.submit(screen.getByRole('form'));
+    fireEvent.submit(screen.getByRole('button', { name: /Make Your reservation/i }));
+
 
     await waitFor(() => expect(mockPost).toHaveBeenCalled());
 });

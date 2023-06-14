@@ -77,7 +77,7 @@ export default function BookingForm({ avialability, dispatch, post }) {
     }
     return (
         <div className="booking-form-container">
-            <form onSubmit={pushBooking} role="form">
+            <form onSubmit={pushBooking}>
                 <label htmlFor="res-date">Choose date</label>
                 <input
                     value={booking.date}
