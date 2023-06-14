@@ -6,6 +6,8 @@
     display: flex;
     max-width: max-content;
     margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 .footer-img img{
     max-width: 30vw;
