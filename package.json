@@ -1,7 +1,6 @@
 {
   "name": "restaurante-app",
   "version": "0.1.0",
-  "homepage": "https://manugrana2.github.io/restaurante-app/",
   "private": true,
   "dependencies": {
     "@testing-library/user-event": "^13.5.0",
